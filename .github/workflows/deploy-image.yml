@@ -39,7 +39,7 @@ jobs:
 
       - name: Build and push Docker images
         id: push
-        uses: mr-smithers-excellent/docker-build-push@v6
+        uses: mr-smithers-excellent/docker-build-push@v6.4
         with:
           context: .
           push: true
