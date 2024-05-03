@@ -10,8 +10,8 @@ RUN apt-get install -y chromium
 COPY package.json package*.json yarn.lock* pnpm-lock.yaml* bun.lockb* tsconfig.json* remotion.config.* .prettierrc* ./
 COPY src ./src
 
-# # If you have a public folder:
-# COPY public ./public
+# If you have a public folder:
+COPY public ./public
 
 # Install the right package manager and dependencies. Adjust if needed.
 RUN npm i
