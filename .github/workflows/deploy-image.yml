@@ -35,9 +35,3 @@ jobs:
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
           password: ${{ secrets.GHCR_TOKEN }}
-      
-      - name: store the image as an artifact
-        uses: actions/upload-artifact@v4.3.3
-        with:
-          name: ${{ env.IMAGE_NAME }}
-          path: ./

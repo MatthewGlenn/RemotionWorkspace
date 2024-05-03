@@ -7,7 +7,7 @@ RUN apt-get update
 RUN apt-get install -y chromium
 
 # Copy everything from your project to the Docker image. Adjust if needed.
-COPY package.json package*.json yarn.lock* pnpm-lock.yaml* bun.lockb* tsconfig.json* remotion.config.* .prettierrc* ./
+COPY package.json package*.json tsconfig.json* remotion.config.* .prettierrc* ./
 
 # Copy the hello world source code to the Docker image
 COPY src ./src
@@ -18,4 +18,5 @@ RUN npm i
 # Expose the port that the server is running on
 EXPOSE 3000
 
-CMD ["npx", "remotion studio"]
+# CMD ["npx", "remotion studio"]
+CMD ["npm", "start"]

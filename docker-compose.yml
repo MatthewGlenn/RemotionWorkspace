@@ -2,6 +2,9 @@ version: '3.8'
 services:
   app:
     image: ghcr.io/matthewglenn/remotionworkspace:latest
+    # build:
+    #   context: .
+    #   dockerfile: Dockerfile
     container_name: remotionworkspace
     ports:
       - "8080:3000"
