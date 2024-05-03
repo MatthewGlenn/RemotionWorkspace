@@ -7,7 +7,7 @@ services:
     #   dockerfile: Dockerfile
     container_name: remotionworkspace
     ports:
-      - "8080:3000"
+      - "8083:3000"
     volumes:
       - $PUBLIC:/public
       - $SRC:/src
