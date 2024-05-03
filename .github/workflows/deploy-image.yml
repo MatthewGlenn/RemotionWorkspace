@@ -43,7 +43,6 @@ jobs:
         with:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-          addLatest: true
           image: ${{ env.IMAGE_NAME }}
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
