@@ -1,6 +1,6 @@
 FROM node:20-bookworm
 
-LABEL org.opencontainers.image.source ghcr.io/matthewglenn/remotionworkspace:latest
+LABEL org.opencontainers.image.source https://github.com/matthewglenn/remotionworkspace
 
 RUN apt-get update
 
