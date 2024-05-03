@@ -1,6 +1,7 @@
 FROM node:20-bookworm
 
 RUN apt-get update
+
 RUN apt-get install -y chromium
 
 # Copy everything from your project to the Docker image. Adjust if needed.
