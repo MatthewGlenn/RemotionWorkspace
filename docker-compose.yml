@@ -4,7 +4,7 @@ services:
     image: ghcr.io/matthewglenn/remotionworkspace:latest
     container_name: remotionworkspace
     ports:
-      - "8080:8080"
+      - "8080:3000"
     volumes:
       - .:/app
       - /app/node_modules

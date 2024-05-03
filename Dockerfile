@@ -16,4 +16,7 @@ COPY src ./src
 # Install the right package manager and dependencies. Adjust if needed.
 RUN npm i
 
+# Expose the port that the server is running on
+EXPOSE 3000
+
 CMD ["npx", "remotion studio"]
