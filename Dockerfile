@@ -1,5 +1,7 @@
 FROM node:20-bookworm
 
+LABEL org.opencontainers.image.source ghcr.io/matthewglenn/remotion-workspace:latest
+
 RUN apt-get update
 
 RUN apt-get install -y chromium
