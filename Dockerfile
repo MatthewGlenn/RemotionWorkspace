@@ -15,9 +15,6 @@ COPY src ./src
 # Install the right package manager and dependencies. Adjust if needed.
 RUN npm i
 
-# Copy the node_modules folder to the Docker image
-COPY node_modules ./node_modules
-
 # Expose the port that the server is running on
 EXPOSE 3000
 
