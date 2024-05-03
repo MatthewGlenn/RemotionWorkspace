@@ -8,4 +8,3 @@ services:
     volumes:
       - $PUBLIC:/public
       - $SRC:/src
-    command: npm start
