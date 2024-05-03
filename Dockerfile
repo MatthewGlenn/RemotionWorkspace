@@ -18,5 +18,4 @@ RUN npm i
 # Expose the port that the server is running on
 EXPOSE 3000
 
-# CMD ["npx", "remotion studio"]
-CMD ["npm", "start"]
+CMD ["npx", "remotion studio"]
