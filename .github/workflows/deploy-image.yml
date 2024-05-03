@@ -41,6 +41,8 @@ jobs:
         id: push
         uses: mr-smithers-excellent/docker-build-push@v6.4
         with:
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
           image: ${{ env.IMAGE_NAME }}
           registry: ${{ env.REGISTRY }}
           username: ${{ github.actor }}
